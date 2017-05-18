@@ -28,8 +28,16 @@ Pysäkkihaku toimii samoin kuin yhden pysäkin kautta kulkevan liikenteen tapauk
 ### vuoro.csv excel-muodossa
 Tiedostoon tuotetaan joka aamu noin klo 07:30 vuorocsv:n versio, jossa sisältöä on muokattu paremmin Excel-yhteensopivaan muotoon muun muassa sisällön suodattamisen helpottamiseksi.
 
-### TVV-kohtaiset paikkatietoaineistot
+### Aluekohtaiset Vallu-paikkatietoaineistot
 Kansioon tuotetaan joka aamu 07:30 lähtien ESRI Shape-muotoiset paikkatietoaineistot, jotka sisältävät kunkin TVV:n maantieteellisen alueen läpi kulkevien vuorojen linjausgeometrian sekä hallinnolliset tiedot.
+
+### Vallu-aineistojen virhelistat
+Kansio sisältää uusimmat Vallu-järjestelmän (vallu_matkafi_virheraportti_YYYYMMDD.xlsx) sekä Koontikannan (interpolointi_<liikennetyyppi>_YYYYMMDD.xlsx) interpolointiprosessin tuottamat virhelistat. Vallu-järjestelmän virhelistalla olevia vuoroja ei siirretä lainkaan järjestelmästä eteenpäin. Interpolointiprosessin virhelistan VIRHE-tyypin rivejä ei pystytä interpoloimaan eikä ne siten näy esimerkiksi matka.fi:ssä tai Liikenneviraston valtakunnallisessa GTFS-aineistossa
+
+### Valluvuorot, joiden siirtyminen koontikannasta matka.fi:hin on estetty
+Tiedosto sisältää listauksen vuoroista, jotka poistetaan automaattisesti Koontikannasta. Lista luodaan tiedostosta http://beta.liikennevirasto.fi/joukkoliikenne/koontikanta_poistolista/poistot.txt löytyvien sääntöjen perusteella käyttäen joko GTFS:n trip_id-tunnisteita tai Vallu-järjestelmän pysyviä tunnisteita sopimuksille, reiteille ja vuoroille. Tiedot ladataan automaattisesti Koontikannan datanlatausprosessien yhteydessä.
+
+
 
 ## Tunnetut ongelmat / puutteet
 - Vuorot, joilla ei ole enää tulevaisuudessa ajopäiviä eivät näy palvelussa. Esimerksi `KESÄ`-kausimerkinnän vuoro, joka loppuu ennen koulujen kesäloman alkua ei näy palveluissa.

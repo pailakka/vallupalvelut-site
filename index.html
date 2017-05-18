@@ -1,6 +1,6 @@
 <html>
   <head>
-      <title>VALLU tietopalvelut</title>
+      <title>Joukkoliikenteen tietopalveluja</title>
       <style>
       body {
         font-family: arial;
@@ -13,25 +13,37 @@
   </head>
   <body>
     <img src="static/livilogo-netti.jpg" alt="Liikennevirasto" height="50"/><br/>
-    <h1>VALLU-tietopalvelut</h1>
-
+    <h1>Joukkoliikenteen tietopalveluja</h1>
+      <strong>Digitransit</strong>
+      <ul>
+        <li><a href="pysakkiaikataulu/">Digitransit pysäkkiaikataulut</a></li>
+      </ul>   
+      <strong>Vallu aineistoihin perustuvat palvelut</strong>                 
       <ul>
         <li><a href="katselu/reitit">Reittien haku</a></li>
         <li><a href="katselu/reitit/kautta">Pysäkin kautta kulkevat liikenne</a></li>
         <li><a href="katselu/reitit/matriisi">Kahden paikan välinen liikenne</a></li>
         <li><a href="vuoro.xlsx">vuoro.csv excel-muodossa</a></li>
-        <li><a href="vallu_paikkatieto/">TVV-kohtaiset paikkatietoaineistot</a></li>
+        <li><a href="vallu_paikkatieto/">Aluekohtaiset Vallu-paikkatietoaineistot</a></li>
+        <li><a href="virhelistat/">Vallu-aineistojen virhelistat</a></li>
+        <li><a href="koontikanta_poistolista/poistot.xlsx"/>Valluvuorot, joiden siirtyminen koontikannasta matka.fi:hin on estetty</a></li>
+        <li><a href="http://www.paikkatietoikkuna.fi/web/fi/kartta?ver=1.17&zoomLevel=1&coord=492148.469_6984220.876&mapLayers=base_35+100+default,1619+100+vallu_linjaukset&showMarker=false">Vallu-järjestelmän linjaukset Paikkatietoikkunassa</a></li>
       </ul>
+      <!--
       <strong>Tulossa:</strong>
       <ul>
-        <li>Ely-kohtaiset Liiteri-näkymät</li>
-        <li>Vallun Ely-kohtaiset virhelistat</li>
+        
       </ul>
+      -->
       <a href="/joukkoliikenne/dokumentaatio/yleista.html">Yleistä palvelusta</a>
       <h1>Muuta</h1>
         <ul>
-          <li><a href="kutsujoukkoliikenne">Kutsujoukkoliikennealueen piirtäminen</a></li>
-          <li><a href="https://extranet.liikennevirasto.fi/extranet/web/fi/joukkoliikenne/jarjestelmat/matka.fi?kategoria=187880">RAE-työkalu</a></li>
+          <li><a href="kutsujoukkoliikenne">Kutsujoukkoliikennepalvelu</a></li>
+          <li><a href="lomat">Koulujen loma-aikojen koonti kunnittain</a></li>
+          <li><a href="https://extranet.liikennevirasto.fi/extranet/web/f/rae?kategoria=1955433">RAE-työkalu</a></li>
+          <ul>
+            <li><a href="http://beta.liikennevirasto.fi/joukkoliikenne/RAEohje.pdf">RAE-työkalun ohje</a></li>
+          </ul>
         </ul>
   </body>
 </html>
